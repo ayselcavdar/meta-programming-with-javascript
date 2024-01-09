@@ -56,3 +56,24 @@ var drone = {
 for (var i = 0; i < arrOfKeys.length; i++) {
   console.log(drone[arrOfKeys[i]]);
 }
+
+//Arrays are Objects
+//That means that arrays also have some built-in properties and methods.
+var fruits = [];
+fruits.push("apple");
+fruits.push("pear");
+console.log(fruits);
+fruits.pop("apple");
+console.log(fruits);
+
+//now build a function that takes all its arguments and pushes them into an array
+function arrayBuilder(one, two, three) {
+  var arr = [];
+  arr.push(one);
+  arr.push(two);
+  arr.push(three);
+  return arr;
+}
+arrayBuilder();
+var simpleArr = arrayBuilder("apple", "pear", "plum");
+console.log(simpleArr);
