@@ -40,3 +40,16 @@ var user = "Lisa";
 //console.log(greet.pop());
 console.log(greet + user);
 console.log(greet.concat(user));
+
+//String cheat sheet
+var greet = "Hello, ";
+var place = "World";
+
+console.log(greet.length);
+console.log(greet.charAt(0));
+
+"Wo".concat("rl").concat("d"); // 'World'
+"ho-ho-ho".indexOf("h"); // 0
+"ho-ho-ho".indexOf("o"); // 1
+"ho-ho-ho".indexOf("-"); // 2
+"ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
