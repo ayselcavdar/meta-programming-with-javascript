@@ -36,3 +36,33 @@ function example() {
   example();
 }
 example();
+
+/**
+ * Scope is all about code accessibility.
+ * It determines which parts of the code are
+ * accessible and which parts are inaccessible.
+ */
+
+/**
+ * the code that exists outside of a function is
+ * referred to as global scope, and all the code
+ * inside of a function is known as local scope or
+ * function scope.
+ */
+
+var num1 = 10; //global
+
+function score() {
+  //local
+  var num2 = 20;
+  console.log(num2);
+}
+
+score();
+
+/**
+ * Variables created within the local scope cannot be
+ *  read by code at the global scope level.
+ * They are accessible only to functions located
+ *  within the local scope.
+ */
