@@ -53,3 +53,14 @@ function letterFinder(word, match) {
   }
 }
 letterFinder("test", "t");
+
+//Exercise
+var virtualPet = {
+  sleepy: true,
+  nap: function () {
+    this.sleepy = false;
+  },
+};
+console.log(virtualPet.sleepy); // true
+virtualPet.nap();
+console.log(virtualPet.sleepy);
